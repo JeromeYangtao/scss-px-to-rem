@@ -1,0 +1,14 @@
+@function rem($pixels) {
+    @return $pixels / $font_size+rem;
+}
+
+$font_size: 16px!default;
+$color:red;
+html {
+    font-size: $font_size;
+}
+
+div {
+    width: rem(100px);
+    height: rem(100px);
+}
